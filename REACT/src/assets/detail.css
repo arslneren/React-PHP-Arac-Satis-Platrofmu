@@ -1,0 +1,11 @@
+.detail-root { padding: 1rem; max-width: 1000px; margin: 1rem auto }
+.detail-card { display: flex; gap: 1rem; background: #fff; color:#111; padding:1rem; border-radius:10px }
+.gallery { flex: 1 }
+.gallery img { width: 100%; border-radius:8px; margin-bottom:0.5rem }
+.info { flex: 1 }
+.price { font-size:1.25rem; color:#0b3d91; font-weight:700 }
+.back { margin-bottom:0.5rem }
+
+@media (max-width: 800px) {
+  .detail-card { flex-direction: column }
+}

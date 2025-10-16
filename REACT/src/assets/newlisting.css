@@ -1,0 +1,35 @@
+.newlisting-form { background: #fff; padding: 1rem; border-radius: 10px; box-shadow: 0 6px 18px rgba(2,6,23,0.08) }
+.newlisting-form label { display: block; margin-bottom: 0.75rem; color: #0b1220; }
+.field { margin-bottom: 0.75rem }
+.field > label { display:block; margin-bottom:0.5rem; color:#0b1220 }
+.editor-wrapper { border: 1px solid #e6e6f0; border-radius:6px; padding:6px; background:#fff }
+.editor-wrapper .ck-editor__editable_inline { min-height:180px }
+.newlisting-form input[type="text"], .newlisting-form input[type="file"], .newlisting-form input { width: 100%; padding: 0.5rem; border-radius: 6px; border: 1px solid #e6e6f0; box-sizing: border-box; }
+.newlisting-form .preview { max-width: 220px; margin-top: 0.5rem; border-radius: 8px }
+.editor-toolbar { display:flex; gap:0.5rem; margin-bottom:0.5rem }
+.editor-toolbar button { padding: 0.35rem 0.5rem; border-radius:6px; border:1px solid #ddd; background: #fafafa; cursor:pointer }
+.rich-editor { min-height: 160px; border:1px solid #e6e6f0; padding: 0.5rem; border-radius: 6px; background: #fff }
+.newlisting-form .row { display:flex; gap:0.5rem; margin-top: 0.75rem }
+.newlisting-form button { padding: 0.6rem 1rem; border-radius:8px }
+.newlisting-form button[type="submit"] { background: linear-gradient(90deg,#7c3aed,#06b6d4); color:#fff; border:none }
+.newlisting-form .secondary { background:transparent; border:1px solid #ddd; color:#0b1220 }
+
+.ck.ck-editor__editable_inline>:last-child{
+    color: #0b1220;
+}
+
+p{
+    padding: 8px;
+    word-spacing: normal;
+}
+
+/* Ensure CKEditor editable area accepts pointer events and sits above surrounding elements if needed */
+.ck-editor__editable_inline {
+  pointer-events: auto;
+  z-index: 2;
+}
+
+@media (max-width:600px) {
+  .newlisting-form .row { flex-direction: column }
+  .editor-toolbar { flex-wrap:wrap }
+}

@@ -1,0 +1,14 @@
+.listing-card {
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+}
+.listing-card img { width: 100%; height: 160px; object-fit: cover }
+.listing-card .meta { padding: 0.75rem }
+.listing-card h3 { margin: 0 0 0.5rem 0; font-size: 1rem }
+.listing-card .price { font-weight: 700; color: #0b3d91 }
+.listing-card button { margin-top: 0.75rem }
